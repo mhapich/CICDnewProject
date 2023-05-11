@@ -7,4 +7,5 @@ datetime
 # catboost - needed conda install -c conda-forge catboost
 # takes lots of minutes on Solving environment
 xgboost
--e .
+dill
+# -e .
