@@ -1,0 +1,10 @@
+pandas
+numpy
+seaborn
+matplotlib
+scikit-learn
+datetime
+# catboost - needed conda install -c conda-forge catboost
+# takes lots of minutes on Solving environment
+xgboost
+-e .
