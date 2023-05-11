@@ -8,4 +8,5 @@ datetime
 # takes lots of minutes on Solving environment
 xgboost
 dill
-# -e .
+dataclasses
+-e .

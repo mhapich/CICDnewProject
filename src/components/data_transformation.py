@@ -47,7 +47,7 @@ class DataTransformation:
                 steps=[
                     ("imputer",SimpleImputer(strategy="most_frequent")),
                     ("one_hot_encoder",OneHotEncoder()),
-                    ("scaler",StandardScaler())
+                    ("scaler",StandardScaler(with_mean=False))
                 ]
             )
 
@@ -69,7 +69,7 @@ class DataTransformation:
         
     def intitiate_data_transformation(self, train_path, test_path):
         try:
-            train_df = pd.read_clipboard(train_path)
+            train_df = pd.read_csv(train_path)
             test_df = pd.read_csv(test_path)
 
             logging.info("Read train and test data completed")
