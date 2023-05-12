@@ -9,4 +9,6 @@ datetime
 xgboost
 dill
 dataclasses
+pickle
+flask
 -e .
